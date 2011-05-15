@@ -126,12 +126,12 @@
 		</command>
 		<command>
 			<type value="produce"/>
-			<name value="produce_disc" />
-			<image path="../disc/images/unit_archer.bmp" />
+			<name value="produce_disc_droid" />
+			<image path="../disc_droid/images/unit_archer.bmp" />
 			<unit-requirements />
 			<upgrade-requirements />
 			<produce-skill value="produce_air_skill"/>
-			<produced-unit name="disc"/>
+			<produced-unit name="disc_droid"/>
 		</command>
 		<command>
 			<type value="produce"/>

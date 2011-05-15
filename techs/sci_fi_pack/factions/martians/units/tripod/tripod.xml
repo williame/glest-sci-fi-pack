@@ -92,7 +92,6 @@
 	
 				<particle-file path="smoke_particles.xml"/>
 		
-				<particle-file path="cannonsmoke_particles.xml"/>
 		
 			</particles>
 			<sound enabled="false"/>

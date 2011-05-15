@@ -5,8 +5,8 @@
 	<primitive value="quad"/>
 	<offset x="0" y="0" z="3"/>
 	<direction x="0.0" y="0" z="1.5"/>
-	<color red="0.0" green="0.6" blue="0.2" alpha="0.2" />
-	<color-no-energy red="0.0" green="0.2" blue="0.0" alpha="0.8" />
+	<color red="0.6" green="0.6" blue="0.6" alpha="0.2" />
+	<color-no-energy red="0.2" green="0.2" blue="0.2" alpha="0.8" />
     	<radius value="1" />
     	<size value="1" />
     	<size-no-energy value="0.7" />
