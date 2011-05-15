@@ -10,12 +10,13 @@
 		<unit name="worker" amount="3"/>
 		<unit name="energy_source" amount="1"/>
 		<unit name="mothership" amount="1"/>
-		<unit name="assault_tripod" amount="1"/>
+		<unit name="assault_tripod" amount="0"/>
 		<unit name="martian_trooper" amount="2"/>
-		<unit name="stalker" amount="1"/>
+		<unit name="tripod" amount="1"/>
 		<unit name="laser_turret" amount="1"/>
-		<unit name="space_port" amount="1"/>
+		<unit name="space_port" amount="0"/>
 		<unit name="flying_saucer" amount="1"/>
+		<unit name="disc" amount="1"/>
 	</starting-units>	
 	<music value="true" path="music/hibernated.ogg"/>
 	

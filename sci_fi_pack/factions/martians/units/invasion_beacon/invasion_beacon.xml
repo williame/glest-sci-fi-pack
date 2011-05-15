@@ -93,7 +93,9 @@
 				<particle-file path="particle_beacon_0.xml"/>
 				<particle-file path="particle_beacon_1.xml"/>
 			</particles>											
-			<sound enabled="false" />											
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/beaconsignal.wav"/>
+			</sound>										
 		</skill>
 	</skills>
 	

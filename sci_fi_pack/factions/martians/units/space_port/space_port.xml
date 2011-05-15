@@ -41,10 +41,10 @@
 		<image-cancel path="images/magic_cancel.bmp"/>
 		<meeting-point value="true" image-path="images/meeting_point.bmp"/>
 		<selection-sounds enabled="true">
-			<sound path="sounds/magic_click.wav"/>
+			<sound path="../worker/sounds/mars_click.wav"/>
 		</selection-sounds>
 		<command-sounds enabled="true">
-			<sound path="sounds/magic_click.wav"/>
+			<sound path="../worker/sounds/mars_click.wav"/>
 		</command-sounds>
 	</parameters>
 	
@@ -65,9 +65,9 @@
 			<type value="be_built"/>
 			<name value="be_built_skill"/>		
 			<ep-cost value="0"/>
-			<speed value="1"/>
+			<speed value="100"/>
 			<anim-speed value="1"/>
-			<animation path="models/port.g3d"/>
+			<animation path="models/port_build.g3d"/>
 			<sound enabled="false"/>
 		</skill>	
 			
@@ -117,16 +117,25 @@
 	<commands>
 		<command>
 			<type value="produce"/>
-			<name value="produce_stalker" />
-			<image path="../stalker/images/unit_archer.bmp" />
+			<name value="produce_tripod" />
+			<image path="../tripod/images/unit_archer.bmp" />
 			<unit-requirements />
 			<upgrade-requirements />
 			<produce-skill value="produce_ground_skill"/>
-			<produced-unit name="stalker"/>
+			<produced-unit name="tripod"/>
 		</command>
 		<command>
 			<type value="produce"/>
-			<name value="produce_saucer" />
+			<name value="produce_disc" />
+			<image path="../disc/images/unit_archer.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_air_skill"/>
+			<produced-unit name="disc"/>
+		</command>
+		<command>
+			<type value="produce"/>
+			<name value="produce_flying_saucer" />
 			<image path="../flying_saucer/images/unit_archer.bmp" />
 			<unit-requirements />
 			<upgrade-requirements />

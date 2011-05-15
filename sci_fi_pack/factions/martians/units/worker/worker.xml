@@ -348,7 +348,7 @@
 			
 		<anim-speed value="90"/>
 			
-		<animation path="models/martian_worker.g3d"/>
+		<animation path="models/worker_die.g3d"/>
 			
 		<sound enabled="true" start-time="0">
 				
@@ -556,7 +556,8 @@
 		<unit name="turret_base"/>
 		<unit name="laser_turret"/>	
 
-		<unit name="space_port"/>										
+		<unit name="space_port"/>
+		<unit name="invasion_beacon"/>											
 			
 	</repaired-units>		
 		
