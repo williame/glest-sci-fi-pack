@@ -10,7 +10,8 @@
 		<unit name="worker" amount="3"/>
 		<unit name="energy_source" amount="1"/>
 		<unit name="mothership" amount="1"/>
-		<unit name="martian_trooper" amount="2"/>
+		<unit name="martian_trooper" amount="1"/>
+		<unit name="chemical_trooper" amount="1"/>
 		<unit name="tripod" amount="1"/>
 		<unit name="laser_turret" amount="1"/>
 		

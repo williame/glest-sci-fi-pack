@@ -45,7 +45,7 @@
 		<damage-multiplier attack="piercing" armor="metal" value="0.75"/>
 		<damage-multiplier attack="piercing" armor="kevlar" value="0.75"/>
 		<damage-multiplier attack="piercing" armor="concrete" value="0.5"/>
-		<damage-multiplier attack="piercing" armor="plasma_shield" value="0.5"/>
+		<damage-multiplier attack="piercing" plasma_shield" value="0.5"/>
 
 		<damage-multiplier attack="impact" armor="organic" value="0.75"/>
 		<damage-multiplier attack="impact" armor="kevlar" value="0.75"/>

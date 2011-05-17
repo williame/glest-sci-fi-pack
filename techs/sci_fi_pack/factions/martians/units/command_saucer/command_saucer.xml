@@ -114,6 +114,14 @@
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="martian_trooper"/>
 		</command>
-		
+		<command>
+			<type value="produce"/>
+			<name value="produce_chemical_trooper" />
+			<image path="../chemical_trooper/images/archer.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="chemical_trooper"/>
+		</command>
 	</commands>
 </unit>
