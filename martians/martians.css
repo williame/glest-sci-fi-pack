@@ -37,4 +37,7 @@ th {
 	color: black;
 	background-color:#70ff70;
 }
+.emph {
+	text-decoration:blink;
+}
 
