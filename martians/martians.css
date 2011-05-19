@@ -3,6 +3,14 @@ body {
 	color: green; 
 	font-family: sans serif;
 }
+img#bg {
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:-1;
+} 
 a {
 	color: green;
 }
@@ -15,7 +23,7 @@ table {
 	-moz-border-radius:25px;
 	-webkit-border-radius:25px;
 	margin:50px auto;
-	background-color:black;
+	background-color: #00000080;
 	box-shadow: #70ff70 10px 10px 10px;
 	-moz-box-shadow: #70ff70 10px 10px 10px;
 	-webkit-box-shadow:#70ff70 10px 10px 10px;
