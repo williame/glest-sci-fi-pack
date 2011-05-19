@@ -11,6 +11,9 @@ img#bg {
 	height:100%;
 	z-index:-1;
 } 
+.credit {
+	opacity: 0.5;
+}
 a {
 	color: green;
 }
