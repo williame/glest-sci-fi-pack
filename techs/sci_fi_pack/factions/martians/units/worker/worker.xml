@@ -425,7 +425,6 @@
 				
 	<buildings>
 				
-		<building name="command_saucer"/>
 		<building name="energy_source"/>
 		<building name="turret_base"/>
 		<building name="invasion_beacon"/>		               	
@@ -466,6 +465,7 @@
 	<buildings>
 				
 		<building name="mothership"/>
+		<building name="command_saucer"/>
 		<building name="space_port"/>		               	
 	</buildings>
 			

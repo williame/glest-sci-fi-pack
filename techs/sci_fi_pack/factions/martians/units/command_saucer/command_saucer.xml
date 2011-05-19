@@ -71,7 +71,16 @@
 			<animation path="models/martian_hq_deploy.g3d"/>
 			<sound enabled="false"/>
 		</skill>	
-			
+		<skill>				
+			<type value="upgrade"/>			
+			<name value="upgrade_skill"/>			
+			<ep-cost value="0" />			
+			<speed value="100" />			
+			<anim-speed value="50" />			
+			<animation path="models/martian_hq_produce.g3d" />			
+			<sound enabled="false" />
+						
+		</skill>
 
 		<skill>
 			<type value="produce" />
@@ -107,7 +116,7 @@
 		
 		<command>
 			<type value="produce"/>
-			<name value="produce_trooper" />
+			<name value="incubate_trooper" />
 			<image path="../martian_trooper/images/archer.bmp" />
 			<unit-requirements />
 			<upgrade-requirements />
@@ -116,12 +125,21 @@
 		</command>
 		<command>
 			<type value="produce"/>
-			<name value="produce_chemical_trooper" />
+			<name value="incubate_chemical_trooper" />
 			<image path="../chemical_trooper/images/archer.bmp" />
 			<unit-requirements />
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="chemical_trooper"/>
+		</command>
+		<command>				
+			<type value="upgrade"/>			
+			<name value="develop_plasma_shield"/>			
+			<image path="../../upgrades/plasma_shields/images/plasma_shield.bmp" />			
+			<unit-requirements />			
+			<upgrade-requirements />			
+			<upgrade-skill value="upgrade_skill"/>			
+			<produced-upgrade name="plasma_shields"/>			
 		</command>
 	</commands>
 </unit>

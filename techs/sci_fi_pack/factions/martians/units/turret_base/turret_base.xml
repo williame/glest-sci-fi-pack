@@ -24,8 +24,9 @@
 		<unit-requirements>
 			<unit name="mothership"/>
 		</unit-requirements>
-		<upgrade-requirements/>
-		
+		<upgrade-requirements>
+			<upgrade name="plasma_shields"/>
+		</upgrade-requirements>
 		<resource-requirements>
 			<resource name="uranium" amount="125"/>
 			<resource name="wood" amount="125"/>			
