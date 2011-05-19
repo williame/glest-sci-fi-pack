@@ -1,0 +1,32 @@
+body {
+	background-color: black;
+	color: green; 
+	font-family: sans serif;
+}
+a {
+	color: green;
+}
+a:link {
+	color: 70ff70;
+}
+table {
+	border:2px solid green;
+	border-radius:25px;
+	-moz-border-radius:25px;
+	-webkit-border-radius:25px;
+	margin:50px auto;
+	background-color:black;
+	box-shadow: #70ff70 10px 10px 10px;
+	-moz-box-shadow: #70ff70 10px 10px 10px;
+	-webkit-box-shadow:#70ff70 10px 10px 10px;
+}
+th {
+	border:2px solid #008000;
+	border-radius:25px;
+	-moz-border-radius:25px;
+	-webkit-border-radius:25px;
+	margin:50px auto;
+	color: black;
+	background-color:#70ff70;
+}
+
