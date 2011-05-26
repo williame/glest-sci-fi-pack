@@ -4,10 +4,10 @@
 	<parameters>
 		<size value="2"/>
 		<height value="4"/>
-		<max-hp value="5000" regeneration="0"/>
+		<max-hp value="7000" regeneration="0"/>
 		<max-ep value="0"/>
-		<armor value="8"/>	
-		<armor-type value="concrete"/>			
+		<armor value="10"/>	
+		<armor-type value="plasma_shield"/>			
 		<sight value="16"/>
 		<time value="140"/>	
 		<multi-selection value="false"/>
@@ -24,8 +24,9 @@
 		<unit-requirements>
 			<unit name="mothership"/>
 		</unit-requirements>
-		<upgrade-requirements/>
-		
+		<upgrade-requirements>
+			<upgrade name="plasma_shields"/>
+		</upgrade-requirements>
 		<resource-requirements>
 			<resource name="uranium" amount="125"/>
 			<resource name="wood" amount="125"/>
@@ -51,8 +52,11 @@
 			<ep-cost value="0"/>
 			<speed value="300"/>
 			<anim-speed value="100"/>
-			<animation path="models/turret_light.g3d"/>
-			
+			<animation path="../laser_turret/models/turret.g3d"/>
+			<particles value="true">			
+				<particle-file path="particle_shield.xml"/>			
+				<particle-file path="particle_shield_odd.xml"/>			
+			</particles>
 			<sound enabled="false"/>
 		</skill>
 
@@ -62,8 +66,10 @@
 			<ep-cost value="0"/>
 			<speed value="0"/>
 			<anim-speed value="0"/>
-			<animation path="models/turret_light.g3d"/>
-			
+			<animation path="../laser_turret/models/turret.g3d"/>
+			<particles value="true">			
+				<particle-file path="particle_shield.xml"/>			
+			</particles>
 			<sound enabled="false"/>
 		</skill>
 		<skill>
@@ -72,8 +78,10 @@
 			<ep-cost value="0"/>
 			<speed value="0"/>
 			<anim-speed value="0"/>
-			<animation path="models/turret_light.g3d"/>
-			
+			<animation path="../laser_turret/models/turret.g3d"/>
+			<particles value="true">			
+				<particle-file path="particle_shield.xml"/>			
+			</particles>
 			<sound enabled="false"/>
 		</skill>
 		<skill>
@@ -82,22 +90,25 @@
 			<ep-cost value="0"/>
 			<speed value="90"/>
 			<anim-speed value="90"/>
-			<animation path="models/turret_light.g3d"/>
-			
+			<animation path="../laser_turret/models/turret_firing.g3d"/>
+			<particles value="true">			
+				<particle-file path="particle_shield.xml"/>			
+			</particles>
 			<sound enabled="false"/>
 				
-			<attack-strenght value="150"/>
+			<attack-strenght value="170"/>
 			<attack-var value="40"/>
-			<attack-range value="8"/>
+			<attack-range value="10"/>
 			<attack-type value="piercing"/>
 			<attack-start-time value="0.6"/>
 			<attack-fields>
 				<field value="land"/>
+				<field value="air"/>
 			</attack-fields>
 			<projectile value="true">				
 				<particle value="true" path="particle_proj.xml"/>				
 				<sound enabled="true">
-					<sound-file path="/sounds/laser3.wav"/>
+					<sound-file path="/sounds/laser_heavy2.wav"/>
 				</sound>
 			</projectile>
 			<splash value="true">				
@@ -116,7 +127,7 @@
 			<ep-cost value="0"/>
 			<speed value="300"/>
 			<anim-speed value="300"/>
-			<animation path="models/turret_base_build.g3d"/>
+			<animation path="../laser_turret/models/turret_base_build.g3d"/>
 			<particles value="true">
 				<particle-file path="die_smoke_particles.xml"/>
 				<particle-file path="die_glow_particles.xml"/>
@@ -125,25 +136,7 @@
 					
 			<fade value="false"/>
 		</skill>
-		<skill>												
-			<type value="morph"/>											
-			<name value="build_death_ray_turret"/>											
-			<ep-cost value="0"/>											
-			<speed value="500"/>											
-			<anim-speed value="200"/>											
-			<animation path="models/turret_base_built.g3d"/>											
-			<sound enabled="false"/> 											
-		</skill>
-		<skill>
-			<type value="be_built" />
-			<name value="be_built_skill"/>		
-			<ep-cost value="0" />
-			<speed value="120"/>
-			<speed value="120"/>
-			<anim-speed value="300" />
-			<animation path="models/turret_base_build.g3d" />
-			<sound enabled="false" />
-		</skill>
+
 	</skills>
 	
 			
@@ -168,17 +161,7 @@
                         <stop-skill value="stop_skill"/>						
 		</command>
 				
-		<command>												
-			<type value="morph"/>											
-			<name value="upgrade_to_death_ray_turret"/>											
-			<image path="../death_ray_turret/images/defense_tower.bmp"/>											
-			<unit-requirements/>											
-			<upgrade-requirements/>
-											
-			<morph-skill value="build_death_ray_turret"/>											
-			<morph-unit name= "death_ray_turret"/>											
-			<discount value="0"/>											
-		</command>		
+						
 						
 						
 	</commands>	

@@ -35,10 +35,10 @@
 		<image-cancel path="images/tech_cancel.bmp"/>
 		<meeting-point value="false"/>
 		<selection-sounds enabled="true">
-			<sound path="../worker/sounds/mars_click.wav"/>					
+			<sound path="/sounds/ufo.wav"/>					
 		</selection-sounds>
 		<command-sounds enabled="true">
-			<sound path="../worker/sounds/mars_click.wav"/>					
+			<sound path="../worker/sounds/mars_click.wav"/>			
 		</command-sounds>
 	</parameters>
 
@@ -69,9 +69,7 @@
 							
 				<particle-file path="particle_shield_odd.xml"/>			
 			</particles>
-			<sound enabled="true" start-time="0.1">
-				<sound-file path="/sounds/ufo.wav"/>
-			</sound>
+			<sound enabled="false"/>
 			
 		</skill>
 
@@ -86,9 +84,7 @@
 							
 				<particle-file path="particle_shield_odd.xml"/>			
 			</particles>
-			<sound enabled="true" start-time="0.1">
-				<sound-file path="/sounds/ufo.wav"/>
-			</sound>
+			<sound enabled="false"/>
 			
 		</skill>
 

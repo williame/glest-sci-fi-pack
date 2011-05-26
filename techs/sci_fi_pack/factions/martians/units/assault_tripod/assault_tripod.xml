@@ -22,6 +22,8 @@
 		<light enabled="false"/>
 		<unit-requirements>
 		</unit-requirements>
+			<unit name="command_saucer"/>
+
 		<upgrade-requirements>					
 							
 		</upgrade-requirements>	
