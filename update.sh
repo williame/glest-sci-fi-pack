@@ -4,5 +4,5 @@ cd techs
 rm -rf *
 7z x ~/Downloads/sci_fi_pack.7z
 cd ..
-detox -s lower -r -v techs
+detox -s lower-only -r -v techs
 cp LICENSE techs/sci_fi_pack
