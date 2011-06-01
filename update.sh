@@ -1,5 +1,5 @@
 #!/bin/sh
-mkdir techs &2> /dev/ull
+mkdir techs &2> /dev/null
 cd techs
 rm -rf *
 7z x ~/Downloads/sci_fi_pack.7z
