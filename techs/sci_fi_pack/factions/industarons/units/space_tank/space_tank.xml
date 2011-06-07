@@ -58,8 +58,8 @@
 			<name value="move_skill"/>		
 			<ep-cost value="0"/>
 			<speed value="250"/>
-			<anim-speed value="150"/>
-			<animation path="models/industaron_tank.g3d"/>
+			<anim-speed value="400"/>
+			<animation path="models/industaron_tank_move.g3d"/>
 			<sound enabled="true" start-time="0">
 				<sound-file path="sounds/tank_tracks.wav"/>
 				
@@ -72,8 +72,8 @@
 			<name value="charge_skill"/>		
 			<ep-cost value="0"/>
 			<speed value="300"/>
-			<anim-speed value="175"/>
-			<animation path="models/industaron_tank.g3d"/>
+			<anim-speed value="500"/>
+			<animation path="models/industaron_tank_move.g3d"/>
 			<sound enabled="true" start-time="0">
 				<sound-file path="sounds/tank_tracks.wav"/>
 			</sound>
@@ -86,7 +86,7 @@
 			<ep-cost value="0"/>
 			<speed value="90"/>
 			<anim-speed value="90"/>
-			<animation path="models/industaron_tank.g3d"/>
+			<animation path="models/industaron_tank_fire.g3d"/>
 			<particles value="true">
 	
 				<particle-file path="smoke_particles.xml"/>
@@ -115,7 +115,24 @@
 				<particle value="true" path="particle_splash.xml"/>			
 			</splash>
 		</skill>
-		
+		<skill>												
+			<type value="morph"/>											
+			<name value="convert_to_heavy"/>											
+			<ep-cost value="0"/>											
+			<speed value="500"/>											
+			<anim-speed value="7"/>											
+			<animation path="models/industaron_tank_transform.g3d"/>											
+			<sound enabled="false"/> 											
+		</skill>
+		<skill>												
+			<type value="morph"/>											
+			<name value="convert_to_aaa"/>											
+			<ep-cost value="0"/>											
+			<speed value="500"/>											
+			<anim-speed value="7"/>											
+			<animation path="models/industaron_tank_transform.g3d"/>											
+			<sound enabled="false"/> 											
+		</skill>
 				
 		<skill>
 			<type value="die"/>
@@ -181,6 +198,32 @@
 			<stop-skill value="stop_skill"/>
 			<attack-skill value="attack_skill"/>
 		</command>
+		<command>												
+			<type value="morph"/>											
+			<name value="transform_to_wave_tank"/>											
+			<image path="../wave_tank/images/unit_archer.bmp"/>											
+			<unit-requirements/>											
+			<upgrade-requirements/>
+											
+			<morph-skill value="convert_to_heavy"/>											
+			<morph-unit name= "wave_tank"/>											
+			<discount value="0"/>											
+		</command>
+
+
+		<command>												
+			<type value="morph"/>											
+			<name value="transform_to_autoblaster"/>											
+			<image path="../autoblaster/images/unit_archer.bmp"/>											
+			<unit-requirements/>											
+			<upgrade-requirements/>
+											
+			<morph-skill value="convert_to_aaa"/>											
+			<morph-unit name= "autoblaster"/>											
+			<discount value="0"/>											
+		</command>
+
+
 		
 	</commands>
 </unit>

@@ -8,15 +8,15 @@
 			
 	</starting-resources>
 	<starting-units>
-		<unit name="mothership" amount="1"/>
-		<unit name="kestral" amount="1"/>
+		<unit name="baseship" amount="1"/>
+		<unit name="kestral" amount="0"/>
 		<unit name="buzzard" amount="1"/>
-		<unit name="s_a_m__launcher" amount="1"/>
+		<unit name="s_a_m__launcher" amount="0"/>
 		<unit name="defense_cannon" amount="1"/>
 		<unit name="space_tank" amount="1"/>
-		<unit name="s_u_v__mech" amount="0"/>
-		<unit name="space_utility_vehicle" amount="2"/>
-<unit name="bio_dome" amount="2"/>
+		<unit name="robot" amount="2"/>
+		<unit name="bio_dome" amount="1"/>
+		<unit name="sat_mine" amount="1"/>
 	</starting-units>	
 	<music value="true" path="music/hibernated.ogg"/>
 	

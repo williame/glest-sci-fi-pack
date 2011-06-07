@@ -1,0 +1,132 @@
+<?xml version="1.0" standalone="no" ?>
+<unit>
+	<!-- *** parameters *** -->
+	<parameters>
+		<size value="4"/>
+		<height value="6"/>
+		<max-hp value="8000" regeneration="0"/>
+		<max-ep value="0"/>
+		<armor value="0"/>
+		<armor-type value="concrete"/>				
+		<sight value="15"/>
+		<time value="250"/>
+		<multi-selection value="false"/>
+		<cellmap value="true">
+			<row value="0000"/> 
+			<row value="1001"/> 
+			<row value="1001"/> 
+			<row value="0000"/>  
+		</cellmap>
+		<levels/>
+		<fields>
+			<field value="land"/>
+		</fields>
+		<properties>
+			<property value="burnable"/>
+		</properties>
+			<light enabled="true" red="0.6" green="0.2" blue="0.3"/>
+		<rotationAllowed value="true" />
+		<unit-requirements/>
+		<upgrade-requirements/>
+		<resource-requirements>
+			<resource name="uranium" amount="150"/>
+			<resource name="ore" amount="350"/>
+			<resource name="wood" amount="50"/>
+		</resource-requirements>
+		<resources-stored>
+			<resource name= "uranium" amount="1800"/>
+			<resource name= "wood" amount="1200"/>				
+			<resource name= "ore" amount="1400"/>	
+			<resource name= "food" amount="-5"/>			
+		</resources-stored>
+		<image path="images/industaron_base.bmp" />
+		<image-cancel path="images/magic_cancel.bmp"/>
+		<meeting-point value="true" image-path="images/meeting_point.bmp"/>
+		<selection-sounds enabled="true">
+			<sound path="sounds/magic_click.wav"/>
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="sounds/magic_click.wav"/>
+		</command-sounds>
+	</parameters>
+	
+	<!-- *** skills *** -->
+	<skills>
+
+		<skill>
+			<type value="stop" />
+			<name value="stop_skill"/>		
+			<ep-cost value="0" />
+			<speed value="500" />
+			<anim-speed value="100" />
+			<animation path="models/bigrocket.g3d"/>
+			<particles value="true">			
+				<particle-file path="light_particle.xml"/>
+				<particle-file path="light_particle2.xml"/>			
+			</particles>
+			<sound enabled="false" />
+		</skill>
+		
+		<skill>
+			<type value="be_built"/>
+			<name value="be_built_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="100"/>
+			<anim-speed value="1"/>
+			<animation path="models/bigrocket.g3d"/>
+			<particles value="true">			
+				<particle-file path="light_particle.xml"/>
+				<particle-file path="light_particle2.xml"/>			
+			</particles>
+			<sound enabled="false"/>
+		</skill>	
+			
+
+		<skill>
+			<type value="produce" />
+			<name value="produce_skill"/>		
+			<ep-cost value="0" />
+			<speed value="100" />
+			<anim-speed value="50" />
+			<animation path="models/bigrocket_produce.g3d" />
+			<particles value="true">			
+				<particle-file path="light_particle.xml"/>
+				<particle-file path="light_particle2.xml"/>			
+			</particles>
+			<sound enabled="false" />
+		</skill>	
+		
+		<skill>
+			<type value="die" />
+			<name value="die_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/bigrocket.g3d" />
+			<particles value="true">			
+				<particle-file path="die_smoke_particles.xml"/>		
+				<particle-file path="die_glow_particles.xml"/>		
+			</particles>	
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/magic_building_fall2.wav"/>
+			</sound>			
+			<fade value="false"/>
+		</skill>
+
+	</skills>
+	
+	<!-- *** commands *** -->
+	<commands>
+		<command>
+			<type value="produce"/>
+			<name value="assemble_robot" />
+			<image path="../robot/images/worker.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="robot"/>
+		</command>
+	
+		
+	</commands>
+</unit>

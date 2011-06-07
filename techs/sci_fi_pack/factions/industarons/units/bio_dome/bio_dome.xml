@@ -25,14 +25,14 @@
 		</properties>				
 		<light enabled="false" />				
 		<unit-requirements>				
-			<unit name="mothership" />			
+			<unit name="baseship" />			
 		</unit-requirements>				
 		<upgrade-requirements />				
 		<resource-requirements>				
 			<resource name="uranium" amount="100"/>			
 			<resource name="wood" amount="150"/>			
 			<resource name="ore" amount="50"/>			
-			<resource name="food" amount="-10"/>			
+			<resource name="food" amount="-14"/>			
 		</resource-requirements>				
 		<resources-stored>				
 			<resource name="food" amount="20"/>			
@@ -57,8 +57,8 @@
 			<ep-cost value="0" />			
 			<speed value="120"/>			
 			<speed value="120"/>			
-			<anim-speed value="50" />			
-			<animation path="models/bio_dome.g3d" />			
+			<anim-speed value="2" />			
+			<animation path="models/bio_dome_build.g3d" />			
 			<sound enabled="false" />			
 		</skill>				
 						
