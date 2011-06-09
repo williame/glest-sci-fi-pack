@@ -12,10 +12,10 @@
 		<time value="250"/>
 		<multi-selection value="false"/>
 		<cellmap value="true">
+			<row value="1101"/> 
+			<row value="1100"/> 
 			<row value="0000"/> 
-			<row value="1001"/> 
-			<row value="1001"/> 
-			<row value="0000"/>  
+			<row value="1001"/>  
 		</cellmap>
 		<levels/>
 		<fields>
@@ -24,7 +24,7 @@
 		<properties>
 			<property value="burnable"/>
 		</properties>
-			<light enabled="true" red="0.6" green="0.2" blue="0.3"/>
+			<light enabled="true" red="0.3" green="0.2" blue="0.2"/>
 		<rotationAllowed value="true" />
 		<unit-requirements/>
 		<upgrade-requirements/>
@@ -58,11 +58,8 @@
 			<ep-cost value="0" />
 			<speed value="500" />
 			<anim-speed value="100" />
-			<animation path="models/barracks.g3d"/>
-			<particles value="true">			
-		
-				<particle-file path="light_particle2.xml"/>			
-			</particles>
+			<animation path="../barracks_module/models/factory.g3d"/>
+			
 			<sound enabled="false" />
 		</skill>
 		
@@ -72,7 +69,7 @@
 			<ep-cost value="0"/>
 			<speed value="100"/>
 			<anim-speed value="1"/>
-			<animation path="models/barracks_build.g3d"/>
+			<animation path="../barracks_module/models/dead.g3d"/>
 			
 			<sound enabled="false"/>
 		</skill>	
@@ -84,10 +81,10 @@
 			<ep-cost value="0" />
 			<speed value="100" />
 			<anim-speed value="100" />
-			<animation path="models/barracks_produce.g3d" />
+			<animation path="../barracks_module/models/factory_produce.g3d" />
 			<particles value="true">			
-				
-				<particle-file path="light_particle2.xml"/>			
+				<particle-file path="produceglow.xml"/>
+				<particle-file path="producesmoke.xml"/>			
 			</particles>
 			<sound enabled="false" />
 		</skill>	
@@ -98,7 +95,7 @@
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
-			<animation path="models/dead.g3d" />
+			<animation path="../barracks_module/models/dead.g3d" />
 			<particles value="true">			
 				<particle-file path="die_smoke_particles.xml"/>		
 				<particle-file path="die_glow_particles.xml"/>		
@@ -113,8 +110,33 @@
 	
 	<!-- *** commands *** -->
 	<commands>
-		
-	
+		<command>
+			<type value="produce"/>
+			<name value="produce_tank" />
+			<image path="../space_tank/images/unit_archer.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="space_tank"/>
+		</command>
+		<command>
+			<type value="produce"/>
+			<name value="produce_kestral" />
+			<image path="../buzzard/images/jumpjet.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="kestral"/>
+		</command>
+		<command>
+			<type value="produce"/>
+			<name value="produce_buzzard" />
+			<image path="../buzzard/images/jumpjet.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="buzzard"/>
+		</command>
 		
 	</commands>
 </unit>

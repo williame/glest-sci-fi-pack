@@ -272,7 +272,7 @@
 			
 		<anim-speed value="300"/>
 		
-		<animation path="models/ind_robot_mine.g3d"/>
+		<animation path="models/ind_robot_move.g3d"/>
 	
 		<sound enabled="false"/>
 		
@@ -342,7 +342,7 @@
 			
 		<anim-speed value="100"/>
 			
-		<animation path="models/ind_robot_mine.g3d"/>
+		<animation path="models/ind_robot.g3d"/>
 			
 		<sound enabled="true" start-time="0.5">
 				
@@ -502,7 +502,8 @@
 		<unit name="s_a_m__launcher"/>
 		<unit name="defense_cannon"/>
 		<unit name="bio_dome"/>	
-		<unit name="barracks_module"/>								
+		<unit name="barracks_module"/>	
+		<unit name="production_module"/>								
 			
 	</repaired-units>		
 		
@@ -567,7 +568,8 @@
 	<buildings>
 				
 		<building name="baseship"/>
-		<building name="barracks_module"/>	               	
+		<building name="barracks_module"/>
+		<building name="production_module"/>	               	
 	</buildings>
 			
 	<start-sound enabled="false"/>

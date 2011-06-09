@@ -115,6 +115,41 @@
 				<particle value="true" path="particle_splash.xml"/>			
 			</splash>
 		</skill>
+		<skill>
+			<type value="attack"/>
+			<name value="aaa_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="90"/>
+			<anim-speed value="300"/>
+			<animation path="../space_tank/models/industaron_tank_aaa_fire.g3d"/>
+			<particles value="true">
+	
+				<particle-file path="smoke_particles.xml"/>
+		
+		
+			</particles>
+			<sound enabled="false"/>
+				
+			<attack-strenght value="150"/>
+			<attack-var value="40"/>
+			<attack-range value="5"/>
+			<attack-type value="piercing"/>
+			<attack-start-time value="0.6"/>
+			<attack-fields>
+				<field value="air"/>
+			</attack-fields>
+			<projectile value="true">				
+				<particle value="true" path="particle_proj.xml"/>				
+				<sound enabled="true">
+					<sound-file path="/sounds/assaultrifle.wav"/>
+				</sound>
+			</projectile>
+			<splash value="true">				
+				<radius value="1"/>			
+				<damage-all value="false"/>			
+				<particle value="true" path="particle_splash.xml"/>			
+			</splash>
+		</skill>
 		
 				
 		<skill>
@@ -181,6 +216,27 @@
 			<stop-skill value="stop_skill"/>
 			<attack-skill value="attack_skill"/>
 		</command>
+		<command>
+			<type value="attack"/>
+			<name value="air_defense"/>
+			<image path="images/tech_shot.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="charge_skill"/>
+			<attack-skill value="aaa_skill"/>
+		</command>
 		
+		
+		<command>
+			<type value="attack_stopped"/>
+			<name value="hold"/>
+			<image path="images/tech_hold.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements>
+				
+			</upgrade-requirements>
+			<stop-skill value="stop_skill"/>
+			<attack-skill value="aaa_skill"/>
+		</command>
 	</commands>
 </unit>
