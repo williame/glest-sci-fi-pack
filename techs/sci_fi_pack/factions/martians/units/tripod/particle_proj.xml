@@ -1,7 +1,7 @@
 <?xml version="1.0" standalone="yes"?>
 <projectile-particle-system>
     	<texture value="true" path="images/particle.bmp" luminance="true"/>
-    	<model value="true" path="models/twin_zap.g3d"/>	
+    	<model value="true" path="models/martian_walker_move.g3d"/>	
 	<primitive value="quad"/>
 	<offset x="0" y="0.5" z="1.2"/>
 	<color red="0.0" green="0.5" blue="0.2" alpha="0.8" />
