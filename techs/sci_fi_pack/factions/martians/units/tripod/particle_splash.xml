@@ -1,7 +1,7 @@
 <?xml version="1.0" standalone="yes"?>
 <splash-particle-system>
     	<texture value="true" path="images/particle.bmp" luminance="true"/>
-        <model value="true" path="models/martian_walker_die.g3d"/>
+        <model value="false"/>
 	<primitive value="quad"/>
 	<offset x="0" y="0" z="0"/>
 	<color red="0.0" green="0.3" blue="0.0" alpha="0.5" />

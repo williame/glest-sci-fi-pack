@@ -9,8 +9,8 @@
 	</starting-resources>
 	<starting-units>
 		<unit name="baseship" amount="1"/>
-		<unit name="kestral" amount="0"/>
-		<unit name="buzzard" amount="0"/>
+		<unit name="kestral" amount="1"/>
+		<unit name="buzzard" amount="1"/>
 		<unit name="s_a_m__launcher" amount="0"/>
 		<unit name="defense_cannon" amount="1"/>
 		<unit name="space_tank" amount="1"/>
