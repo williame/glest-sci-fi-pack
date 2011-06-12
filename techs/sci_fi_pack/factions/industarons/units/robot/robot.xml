@@ -378,7 +378,34 @@
 		<fade value="false"/>
 		
 	</skill>	
-							
+			
+		<skill>
+			<type value="attack"/>
+			<name value="attack_skill"/>		
+			<ep-cost value="0"/>
+			<speed value="50"/>
+			<anim-speed value="50"/>
+			<animation path="models/ind_robot_defend.g3d"/>
+			<sound enabled="false"/>
+				
+			<attack-strenght value="50"/>
+			<attack-var value="20"/>
+			<attack-range value="4"/>
+			<attack-type value="piercing"/>
+			<attack-start-time value="0.5"/>
+			<attack-fields>
+				<field value="land"/>
+			</attack-fields>
+			<projectile value="true">
+				<particle value="true" path="particle_proj.xml"/>
+				<sound enabled="true">
+					<sound-file path="/sounds/laser_light.wav"/>
+					
+				</sound>
+			</projectile>
+			<splash value="false"/>
+		</skill>
+				
 
 	
 	</skills>
@@ -583,7 +610,27 @@
 		
 </command>
 
-	
+
+		<command>
+			<type value="attack"/>
+			<name value="attack"/>
+			<image path="images/attack.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<move-skill value="move_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command>
+		
+		<command>
+			<type value="attack_stopped"/>
+			<name value="hold_position"/>
+			<image path="images/tech_stop.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+				
+			<stop-skill value="stop_skill"/>
+			<attack-skill value="attack_skill"/>
+		</command>	
 </commands>
 
 </unit>

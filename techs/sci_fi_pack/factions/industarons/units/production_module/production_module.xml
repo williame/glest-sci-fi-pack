@@ -67,9 +67,9 @@
 			<type value="be_built"/>
 			<name value="be_built_skill"/>		
 			<ep-cost value="0"/>
-			<speed value="100"/>
+			<speed value="300"/>
 			<anim-speed value="1"/>
-			<animation path="../barracks_module/models/dead.g3d"/>
+			<animation path="../barracks_module/models/factory_build.g3d"/>
 			
 			<sound enabled="false"/>
 		</skill>	
@@ -79,8 +79,8 @@
 			<type value="produce" />
 			<name value="produce_skill"/>		
 			<ep-cost value="0" />
-			<speed value="100" />
-			<anim-speed value="100" />
+			<speed value="200" />
+			<anim-speed value="200" />
 			<animation path="../barracks_module/models/factory_produce.g3d" />
 			<particles value="true">			
 				<particle-file path="produceglow.xml"/>
@@ -137,6 +137,14 @@
 			<produce-skill value="produce_skill"/>
 			<produced-unit name="buzzard"/>
 		</command>
-		
+		<command>
+			<type value="produce"/>
+			<name value="produce_heavy_missile" />
+			<image path="../heavy_missile/images/unit_archer.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="heavy_missile"/>
+		</command>
 	</commands>
 </unit>

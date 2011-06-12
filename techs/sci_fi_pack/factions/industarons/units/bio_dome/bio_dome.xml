@@ -90,7 +90,7 @@
 			<ep-cost value="0" />			
 			<speed value="300" />			
 			<anim-speed value="300" />			
-			<animation path="models/bio_dome.g3d" />			
+			<animation path="models/bio_dome_die.g3d" />			
 			<particles value="true">										
 				<particle-file path="die_smoke_particles.xml"/>									
 				<particle-file path="die_glow_particles.xml"/>									

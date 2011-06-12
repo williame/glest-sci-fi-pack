@@ -102,7 +102,7 @@
 			<ep-cost value="0" />
 			<speed value="300" />
 			<anim-speed value="300" />
-			<animation path="models/bigrocket.g3d" />
+			<animation path="models/bigrocket_die.g3d" />
 			<particles value="true">			
 				<particle-file path="die_smoke_particles.xml"/>		
 				<particle-file path="die_glow_particles.xml"/>		
