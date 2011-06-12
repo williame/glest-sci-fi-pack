@@ -7,7 +7,7 @@ cd ..
 mkdir tilesets
 cd tilesets
 rm -rf scifi_twilight
-7x x ~/Downloads/scifi_twilight.7z
+7z x ~/Downloads/scifi_twilight.7z
 cd ..
 detox -s lower-only -r -v techs
 detox -s lower-only -r -v tilesets
