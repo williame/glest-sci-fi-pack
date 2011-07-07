@@ -1,7 +1,7 @@
 <?xml version="1.0" standalone="yes"?>
 <projectile-particle-system>
     	<texture value="true" path="images/particle.bmp" luminance="true"/>
-    	<model value="true" path="../space_tank/models/heavy_missile.g3d"/>
+    	<model value="true" path="../space_tank/models/heavy_missile_ani.g3d"/>
 	<primitive value="quad"/>
 	<offset x="0" y="-0.2" z="-2"/>
 	<color red="0.6" green="0.2" blue="0.0" alpha="0.2" />
@@ -13,7 +13,7 @@
     	<emission-rate value="90" />
     	<energy-max value="10" />
     	<energy-var value="5" />
-	
+
 	<trajectory type="parabolic">
 		<speed value="8.0"/>
 		<scale value="10"/>
