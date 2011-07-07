@@ -91,7 +91,7 @@
 		<skill>
 			<type value="attack"/>
 			<name value="attack_skill"/>		
-			<ep-cost value="200"/>
+			<ep-cost value="300"/>
 			<hp-cost value="1000"/>
 			<speed value="10"/>
 			<anim-speed value="10"/>

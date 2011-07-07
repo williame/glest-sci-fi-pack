@@ -65,9 +65,17 @@
 			<speed value="200"/>
 			<anim-speed value="100"/>
 			<animation path="models/ufo.g3d"/>
-			<particles value="true">			
-							
-				<particle-file path="particle_shield_odd.xml"/>			
+			<particles value="true">
+				<!-- when we move, we have a sparkling ring rather than all over -->			
+				<particle-file path="particle_shield_odd.xml">
+					<shape value="conical">
+						<angle value="90"/>
+					</shape>
+					<radius value="1.7"/>
+					<min-radius value="1.6"/>
+					<direction x="0" y="1" z="0"/>
+					<offset x="0" y="-0.25" z="0"/>
+				</particle-file>
 			</particles>
 			<sound enabled="false"/>
 			

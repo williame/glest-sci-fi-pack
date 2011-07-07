@@ -4,8 +4,8 @@
     	<model value="true" path="../space_tank/models/heavy_missile_ani.g3d"/>
 	<primitive value="quad"/>
 	<offset x="0" y="-0.2" z="-2"/>
-	<color red="0.6" green="0.2" blue="0.0" alpha="0.2" />
-	<color-no-energy red="0.0" green="0.0" blue="0.0" alpha="0.2" />
+	<color red="0.7" green="0.7" blue="0.7" alpha="0.6" />
+	<color-no-energy red="0.2" green="0.2" blue="0.2" alpha="0.1" />
     	<size value="0.3" />
     	<size-no-energy value="0.4" />
     	<speed value="5.0" />
@@ -13,7 +13,16 @@
     	<emission-rate value="90" />
     	<energy-max value="10" />
     	<energy-var value="5" />
-
+	<child-particles value="true">
+		<particle-file path="explode1.xml">
+			<texture value="true" path="images/explosion.png" luminance="true"/>
+			<min-radius value="0.5"/>
+			<lifetime value="2"/>
+			<size value="0.1"/>
+			<energy-max value="25" />
+			<size-no-energy value="3"/>
+		</particle-file>
+	</child-particles>
 	<trajectory type="parabolic">
 		<speed value="8.0"/>
 		<scale value="10"/>

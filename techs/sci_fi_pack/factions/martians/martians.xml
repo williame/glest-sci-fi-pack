@@ -14,6 +14,7 @@
 		<unit name="chemical_trooper" amount="1"/>
 		<unit name="tripod" amount="1"/>
 		<unit name="laser_turret" amount="1"/>
+		<unit name="flying_saucer" amount="0"/>
 		
 	</starting-units>	
 	<music value="true" path="music/hibernated.ogg"/>
