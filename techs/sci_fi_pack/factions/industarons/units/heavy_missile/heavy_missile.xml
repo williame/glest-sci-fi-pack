@@ -59,7 +59,11 @@
 			<ep-cost value="0"/>
 			<speed value="150"/>
 			<anim-speed value="400"/>
-			<animation path="../space_tank/models/industaron_tbm.g3d"/>
+			<animation path="../space_tank/models/industaron_tbm_move.g3d"/>
+			<particles value="true">
+				<particle-file path="particle_tracks1.xml"/>
+				<particle-file path="particle_tracks2.xml"/>		
+			</particles>
 			<sound enabled="true" start-time="0">
 				<sound-file path="sounds/tank_tracks.wav"/>
 				
@@ -73,7 +77,11 @@
 			<ep-cost value="0"/>
 			<speed value="180"/>
 			<anim-speed value="500"/>
-			<animation path="../space_tank/models/industaron_tbm.g3d"/>
+			<animation path="../space_tank/models/industaron_tbm_move.g3d"/>
+			<particles value="true">
+				<particle-file path="particle_tracks1.xml"/>
+				<particle-file path="particle_tracks2.xml"/>		
+			</particles>
 			<sound enabled="true" start-time="0">
 				<sound-file path="sounds/tank_tracks.wav"/>
 			</sound>
@@ -89,7 +97,9 @@
 			<anim-speed value="10"/>
 			<animation path="../space_tank/models/industaron_tbm_firing.g3d"/>
 			
-			<sound enabled="false"/>
+			<sound enabled="true" start-time="0">
+				<sound-file path="sounds/msl_launch.wav"/>
+			</sound>
 				
 			<attack-strenght value="3000"/>
 			<attack-var value="40"/>
@@ -119,7 +129,7 @@
 			<ep-cost value="0"/>
 			<speed value="60"/>
 			<anim-speed value="60"/>
-			<animation path="../space_tank/models/industaron_tbm.g3d"/>
+			<animation path="../space_tank/models/industaron_tbm_die.g3d"/>
 			<particles value="true">										
 				<particle-file path="die_smoke_particles.xml"/>									
 				<particle-file path="die_glow_particles.xml"/>									

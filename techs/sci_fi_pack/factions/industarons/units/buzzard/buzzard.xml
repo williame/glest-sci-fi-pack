@@ -4,10 +4,10 @@
 	<parameters>
 		<size value="3"/>
 		<height value="1"/>
-		<max-hp value="2000" regeneration="1"/>
+		<max-hp value="1900" regeneration="1"/>
 		<max-ep value="0"/>
 		<armor value="40"/>	
-		<armor-type value="kevlar"/>				
+		<armor-type value="kevlar"/>					
 		<sight value="5"/>
 		<time value="65"/>	
 		<multi-selection value="true"/>	
@@ -25,9 +25,9 @@
 							
 		</upgrade-requirements>	
 		<resource-requirements>
-			<resource name="wood" amount="200"/>
-			<resource name="uranium" amount="500"/>
-			<resource name="ore" amount="200"/>
+			<resource name="wood" amount="150"/>
+			<resource name="uranium" amount="250"/>
+			<resource name="ore" amount="150"/>
 			<resource name="food" amount="1"/>				
 		</resource-requirements>
 		<resources-stored/>
@@ -38,7 +38,7 @@
 			<sound path="/sounds/click.wav"/>					
 		</selection-sounds>
 		<command-sounds enabled="true">
-			<sound path="sounds/click.wav"/>			
+			<sound path="sounds/jetstart1.ogg"/>			
 		</command-sounds>
 
 	</parameters>
@@ -58,9 +58,7 @@
 				<particle-file path="particle_engine_h3.xml"/>
 				<particle-file path="particle_engine_h4.xml"/>		
 			</particles>
-			<sound enabled="true" start-time="0">
-				<sound-file path="sounds/orni_standing.wav"/>
-			</sound>
+			<sound enabled="false"/>
 		</skill>
 		
 		<skill>
@@ -76,9 +74,7 @@
 				<particle-file path="particle_engine3.xml"/>
 				<particle-file path="particle_engine4.xml"/>		
 			</particles>
-			<sound enabled="true" start-time="0">
-				<sound-file path="sounds/orni_fly.wav"/>
-			</sound>
+			<sound enabled="false"/>
 			
 		</skill>
 		
@@ -95,12 +91,10 @@
 				<particle-file path="particle_engine_h3.xml"/>
 				<particle-file path="particle_engine_h4.xml"/>		
 			</particles>
-			<sound enabled="true" start-time="0">
-				<sound-file path="sounds/orni_standing.wav"/>
-			</sound>
-			<attack-strenght value="220"/>
+			<sound enabled="false"/>
+			<attack-strenght value="210"/>
 			<attack-var value="40"/>
-			<attack-range value="3"/>
+			<attack-range value="5"/>
 			<attack-type value="piercing"/>
 			<attack-start-time value="0.5"/>
 			<attack-fields>
@@ -109,7 +103,7 @@
 			<projectile value="true">
 				<particle value="true" path="molotov_particle_proj.xml"/>
 				<sound enabled="true">
-					<sound-file path="/sounds/bomb_drop.wav"/>
+					<sound-file path="sounds/bomb_drop.wav"/>
 				</sound>
 			</projectile>
 			<splash value="true">
@@ -124,14 +118,10 @@
 			<type value="die"/>
 			<name value="die_skill"/>		
 			<ep-cost value="0"/>
-			<speed value="50"/>
-			<anim-speed value="50"/>
-			<animation path="../kestral/models/bomber.g3d"/>
-			<sound enabled="true" start-time="0">
-				<sound-file path="sounds/orni_die1.wav"/>
-				<sound-file path="sounds/orni_die2.wav"/>
-				<sound-file path="sounds/orni_die3.wav"/>
-			</sound>
+			<speed value="40"/>
+			<anim-speed value="40"/>
+			<animation path="../kestral/models/bomber_die.g3d"/>
+			<sound enabled="false"/>
 			<fade value="false"/>
 		</skill>
 

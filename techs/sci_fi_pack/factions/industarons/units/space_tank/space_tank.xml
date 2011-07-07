@@ -4,7 +4,7 @@
 	<parameters>
 		<size value="2"/>
 		<height value="1"/>
-		<max-hp value="1800" regeneration="1"/>
+		<max-hp value="2000" regeneration="1"/>
 		<max-ep value="0"/>
 		<armor value="40"/>	
 		<armor-type value="kevlar"/>				
@@ -60,6 +60,10 @@
 			<speed value="250"/>
 			<anim-speed value="400"/>
 			<animation path="models/industaron_tank_move.g3d"/>
+			<particles value="true">
+				<particle-file path="particle_tracks1.xml"/>
+				<particle-file path="particle_tracks2.xml"/>		
+			</particles>
 			<sound enabled="true" start-time="0">
 				<sound-file path="sounds/tank_tracks.wav"/>
 				
@@ -74,6 +78,10 @@
 			<speed value="300"/>
 			<anim-speed value="500"/>
 			<animation path="models/industaron_tank_move.g3d"/>
+			<particles value="true">
+				<particle-file path="particle_tracks1.xml"/>
+				<particle-file path="particle_tracks2.xml"/>		
+			</particles>
 			<sound enabled="true" start-time="0">
 				<sound-file path="sounds/tank_tracks.wav"/>
 			</sound>
@@ -106,7 +114,7 @@
 			<projectile value="true">				
 				<particle value="true" path="particle_proj.xml"/>				
 				<sound enabled="true">
-					<sound-file path="/sounds/laser4.wav"/>
+					<sound-file path="/sounds/bazooka.wav"/>
 				</sound>
 			</projectile>
 			<splash value="true">				

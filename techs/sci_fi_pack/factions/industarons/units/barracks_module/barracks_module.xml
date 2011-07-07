@@ -114,7 +114,24 @@
 	<!-- *** commands *** -->
 	<commands>
 		
-	
+		<command>
+			<type value="produce"/>
+			<name value="train_trooper" />
+			<image path="../trooper/images/inf.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="trooper"/>
+		</command>
+		<command>
+			<type value="produce"/>
+			<name value="train_chariot" />
+			<image path="../chariot/images/inf.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="chariot"/>
+		</command>
 		
 	</commands>
 </unit>

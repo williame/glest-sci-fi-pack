@@ -9,17 +9,14 @@
 	</starting-resources>
 	<starting-units>
 		<unit name="baseship" amount="1"/>
-		<unit name="kestral" amount="0"/>
-		<unit name="buzzard" amount="0"/>
-		<unit name="s_a_m__launcher" amount="0"/>
 		<unit name="defense_cannon" amount="1"/>
 		<unit name="space_tank" amount="1"/>
-		<unit name="away_team_member" amount="1"/>
+		<unit name="trooper" amount="1"/>
+		<unit name="chariot" amount="1"/>
 		<unit name="robot" amount="2"/>
 		<unit name="bio_dome" amount="1"/>
-		<unit name="sat_mine" amount="0"/>		
-		<unit name="heavy_missile" amount="1"/>
-		<unit name="production_module" amount="0"/>
+		<unit name="buzzard" amount="0"/>
+		<unit name="heavy_missile" amount="0"/>		
 	</starting-units>	
 	<music value="true" path="music/hibernated.ogg"/>
 	

@@ -122,7 +122,7 @@
 		<command>
 			<type value="produce"/>
 			<name value="produce_kestral" />
-			<image path="../buzzard/images/jumpjet.bmp" />
+			<image path="../kestral/images/jumpjet.bmp" />
 			<unit-requirements />
 			<upgrade-requirements />
 			<produce-skill value="produce_skill"/>

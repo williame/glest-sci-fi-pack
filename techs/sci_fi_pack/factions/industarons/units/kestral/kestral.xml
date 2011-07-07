@@ -38,7 +38,7 @@
 			<sound path="/sounds/click.wav"/>					
 		</selection-sounds>
 		<command-sounds enabled="true">
-			<sound path="sounds/click.wav"/>			
+			<sound path="sounds/spaceplane1.ogg"/>			
 		</command-sounds>
 
 	</parameters>
@@ -56,9 +56,7 @@
 				<particle-file path="particle_engine_h1.xml"/>
 				<particle-file path="particle_engine_h2.xml"/>		
 			</particles>
-			<sound enabled="true" start-time="0">
-				<sound-file path="sounds/orni_standing.wav"/>
-			</sound>
+			<sound enabled="false"/>
 		</skill>
 		
 		<skill>
@@ -72,9 +70,7 @@
 				<particle-file path="particle_engine1.xml"/>
 				<particle-file path="particle_engine2.xml"/>		
 			</particles>
-			<sound enabled="true" start-time="0">
-				<sound-file path="sounds/orni_fly.wav"/>
-			</sound>
+			<sound enabled="false"/>
 		</skill>
 		
 		<skill>
@@ -88,9 +84,7 @@
 				<particle-file path="particle_engine_h1.xml"/>
 				<particle-file path="particle_engine_h2.xml"/>		
 			</particles>
-			<sound enabled="true" start-time="0">
-				<sound-file path="sounds/orni_standing.wav"/>
-			</sound>
+			<sound enabled="false"/>
 			<attack-strenght value="100"/>
 			<attack-var value="40"/>
 			<attack-range value="8"/>
@@ -102,7 +96,7 @@
 			<projectile value="true">
 				<particle value="true" path="molotov_particle_proj.xml"/>
 				<sound enabled="true">
-					<sound-file path="/sounds/orni_hit1.wav"/>
+					<sound-file path="sounds/msl_launch.wav"/>
 					
 				</sound>
 			</projectile>
@@ -124,11 +118,9 @@
 				<particle-file path="particle_engine_h1.xml"/>
 				<particle-file path="particle_engine_h2.xml"/>		
 			</particles>
-			<sound enabled="true" start-time="0.5">
-				<sound-file path="/sounds/orni_attack.wav"/>
-			</sound>
-			<attack-strenght value="150"/>
-			<attack-var value="50"/>
+			<sound enabled="false"/>
+			<attack-strenght value="200"/>
+			<attack-var value="40"/>
 			<attack-range value="9"/>
 			<attack-type value="piercing"/>
 			<attack-start-time value="0.5"/>
@@ -138,11 +130,7 @@
 			<projectile value="true">
 				<particle value="true" path="arrow_particle_proj.xml"/>
 				<sound enabled="true">
-					<sound-file path="/sounds/orni_hit1.wav"/>
-					<sound-file path="/sounds/orni_hit2.wav"/>
-					<sound-file path="/sounds/orni_hit3.wav"/>
-					<sound-file path="/sounds/orni_hit4.wav"/>
-					<sound-file path="/sounds/orni_hit5.wav"/>
+					<sound-file path="sounds/msl_launch.wav"/>
 				</sound>
 			</projectile>
 			<splash value="true">
@@ -159,11 +147,7 @@
 			<speed value="50"/>
 			<anim-speed value="50"/>
 			<animation path="models/jumpjet_die.g3d"/>
-			<sound enabled="true" start-time="0">
-				<sound-file path="sounds/orni_die1.wav"/>
-				<sound-file path="sounds/orni_die2.wav"/>
-				<sound-file path="sounds/orni_die3.wav"/>
-			</sound>
+			<sound enabled="false"/>
 			<fade value="false"/>
 		</skill>
 

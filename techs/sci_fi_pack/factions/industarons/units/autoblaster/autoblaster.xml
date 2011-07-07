@@ -60,6 +60,10 @@
 			<speed value="250"/>
 			<anim-speed value="400"/>
 			<animation path="../space_tank/models/industaron_tank_aaa_move.g3d"/>
+			<particles value="true">
+				<particle-file path="particle_tracks1.xml"/>
+				<particle-file path="particle_tracks2.xml"/>		
+			</particles>
 			<sound enabled="true" start-time="0">
 				<sound-file path="sounds/tank_tracks.wav"/>
 				
@@ -74,6 +78,10 @@
 			<speed value="300"/>
 			<anim-speed value="500"/>
 			<animation path="../space_tank/models/industaron_tank_aaa_move.g3d"/>
+			<particles value="true">
+				<particle-file path="particle_tracks1.xml"/>
+				<particle-file path="particle_tracks2.xml"/>		
+			</particles>
 			<sound enabled="true" start-time="0">
 				<sound-file path="sounds/tank_tracks.wav"/>
 			</sound>
