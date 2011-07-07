@@ -14,6 +14,7 @@
 		<unit name="s_a_m__launcher" amount="0"/>
 		<unit name="defense_cannon" amount="1"/>
 		<unit name="space_tank" amount="1"/>
+		<unit name="away_team_member" amount="1"/>
 		<unit name="robot" amount="2"/>
 		<unit name="bio_dome" amount="1"/>
 		<unit name="sat_mine" amount="0"/>		

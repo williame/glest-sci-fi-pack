@@ -52,6 +52,10 @@
 			<speed value="1000"/>
 			<anim-speed value="75"/>
 			<animation path="models/jumpjet_hover.g3d"/>
+			<particles value="true">	
+				<particle-file path="particle_engine_h1.xml"/>
+				<particle-file path="particle_engine_h2.xml"/>		
+			</particles>
 			<sound enabled="true" start-time="0">
 				<sound-file path="sounds/orni_standing.wav"/>
 			</sound>
@@ -64,6 +68,10 @@
 			<speed value="350"/>
 			<anim-speed value="75"/>
 			<animation path="models/jumpjet.g3d"/>
+			<particles value="true">	
+				<particle-file path="particle_engine1.xml"/>
+				<particle-file path="particle_engine2.xml"/>		
+			</particles>
 			<sound enabled="true" start-time="0">
 				<sound-file path="sounds/orni_fly.wav"/>
 			</sound>
@@ -76,6 +84,10 @@
 			<speed value="35"/>
 			<anim-speed value="35"/>
 			<animation path="models/jumpjet_hover.g3d"/>
+			<particles value="true">	
+				<particle-file path="particle_engine_h1.xml"/>
+				<particle-file path="particle_engine_h2.xml"/>		
+			</particles>
 			<sound enabled="true" start-time="0">
 				<sound-file path="sounds/orni_standing.wav"/>
 			</sound>
@@ -108,6 +120,10 @@
 			<speed value="70"/>
 			<anim-speed value="70"/>
 			<animation path="models/jumpjet_hover.g3d"/>
+			<particles value="true">	
+				<particle-file path="particle_engine_h1.xml"/>
+				<particle-file path="particle_engine_h2.xml"/>		
+			</particles>
 			<sound enabled="true" start-time="0.5">
 				<sound-file path="/sounds/orni_attack.wav"/>
 			</sound>

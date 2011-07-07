@@ -4,8 +4,8 @@
 	<parameters>
 		<size value="3"/>
 		<height value="3"/>
-		<max-hp value="900" regeneration="1"/>
-		<max-ep value="0"/>
+		<max-hp value="900" regeneration="0"/>
+		<max-ep value="300" regeneration="2"/>
 		<armor value="0"/>	
 		<armor-type value="metal"/>				
 		<sight value="3"/>
@@ -83,14 +83,15 @@
 		<skill>
 			<type value="attack"/>
 			<name value="attack_skill"/>		
-			<ep-cost value="0"/>
+			<ep-cost value="200"/>
+			<hp-cost value="1000"/>
 			<speed value="10"/>
 			<anim-speed value="10"/>
 			<animation path="../space_tank/models/industaron_tbm_firing.g3d"/>
 			
 			<sound enabled="false"/>
 				
-			<attack-strenght value="800"/>
+			<attack-strenght value="3000"/>
 			<attack-var value="40"/>
 			<attack-range value="25"/>
 			<attack-type value="impact"/>

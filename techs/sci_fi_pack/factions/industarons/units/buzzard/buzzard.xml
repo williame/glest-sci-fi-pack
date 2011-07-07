@@ -52,6 +52,12 @@
 			<speed value="1000"/>
 			<anim-speed value="75"/>
 			<animation path="../kestral/models/bomber_hover.g3d"/>
+			<particles value="true">	
+				<particle-file path="particle_engine_h1.xml"/>
+				<particle-file path="particle_engine_h2.xml"/>
+				<particle-file path="particle_engine_h3.xml"/>
+				<particle-file path="particle_engine_h4.xml"/>		
+			</particles>
 			<sound enabled="true" start-time="0">
 				<sound-file path="sounds/orni_standing.wav"/>
 			</sound>
@@ -64,9 +70,16 @@
 			<speed value="200"/>
 			<anim-speed value="200"/>
 			<animation path="../kestral/models/bomber.g3d"/>
+			<particles value="true">	
+				<particle-file path="particle_engine1.xml"/>
+				<particle-file path="particle_engine2.xml"/>
+				<particle-file path="particle_engine3.xml"/>
+				<particle-file path="particle_engine4.xml"/>		
+			</particles>
 			<sound enabled="true" start-time="0">
 				<sound-file path="sounds/orni_fly.wav"/>
 			</sound>
+			
 		</skill>
 		
 		<skill>
@@ -76,6 +89,12 @@
 			<speed value="35"/>
 			<anim-speed value="35"/>
 			<animation path="../kestral/models/bomber_hover.g3d"/>
+			<particles value="true">	
+				<particle-file path="particle_engine_h1.xml"/>
+				<particle-file path="particle_engine_h2.xml"/>
+				<particle-file path="particle_engine_h3.xml"/>
+				<particle-file path="particle_engine_h4.xml"/>		
+			</particles>
 			<sound enabled="true" start-time="0">
 				<sound-file path="sounds/orni_standing.wav"/>
 			</sound>
